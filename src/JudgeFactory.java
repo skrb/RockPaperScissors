@@ -27,6 +27,7 @@ public class JudgeFactory {
                 scissorsMap.put(Hand.ROCK, Result.LOSE);
                 scissorsMap.put(Hand.PAPER, Result.WIN);
                 scissorsMap.put(Hand.SCISSORS, Result.DRAW);
+                judgeMap.put(Hand.SCISSORS, scissorsMap);
             }
         
             @Override
