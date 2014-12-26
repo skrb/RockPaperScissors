@@ -6,7 +6,7 @@ public class JudgeFactory {
 
     static Judge create() {
         return new Judge() {
-            Map<Hand, Map<Hand, Result>> judgeMap;
+            final Map<Hand, Map<Hand, Result>> judgeMap;
 
             {
                 judgeMap = new EnumMap<>(Hand.class);
